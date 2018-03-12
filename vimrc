@@ -437,6 +437,9 @@ set incsearch
 set laststatus=2
 set list
 
+" Puts new split windows to the bottom of the current
+set splitbelow
+
 " Don't redraw while executing macros
 set nolazyredraw
 
