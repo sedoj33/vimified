@@ -327,9 +327,11 @@ if count(g:vimified_packages, 'color')
     Bundle 'xero/sourcerer.vim'
     Bundle 'rakr/vim-one'
 
-    " During installation the molokai colorscheme might not be avalable
-    if filereadable(globpath(&rtp, 'colors/molokai.vim'))
-      colorscheme molokai
+    " During installation the hybrid colorscheme might not be avalable
+    if filereadable(globpath(&rtp, 'colors/hybrid.vim'))
+      colorscheme hybrid
+      set background=dark
+      let g:airline_theme='molokai'
     else
       colorscheme default
     endif
