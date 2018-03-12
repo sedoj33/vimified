@@ -497,6 +497,25 @@ set wildignore=.svn,CVS,.git,.hg,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jp
 set wildmenu
 
 set dictionary=/usr/share/dict/words
+
+if has("gui_running")
+  set lines=60 columns=150
+  colorscheme one
+  let g:airline_theme='one'
+  if has("gui_gtk2")
+    set guifont=Ubuntu\ Mono\ 13
+  elseif has("gui_gtk3")
+    set guifont=Ubuntu\ Mono\ 13
+  elseif has("gui_macvim")
+    set guifont=Menlo\ Regular:h14
+  elseif has("gui_win32")
+    set guifont=Consolas:h11:cANSI
+  endif
+  if has("gui_gtk2") || has("gui_gtk3")
+      map <silent> <F11>
+      \    :call system("wmctrl -ir " . v:windowid . " -b toggle,fullscreen")<CR>
+  endif
+endif
 " }}}
 
 " Triggers {{{
