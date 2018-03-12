@@ -155,6 +155,7 @@ if count(g:vimified_packages, 'coding')
     nmap <leader>t :TagbarToggle<CR>
 
     Bundle 'gregsexton/gitv'
+    Bundle 'airblade/vim-gitgutter'
 
     Bundle 'joonty/vdebug.git'
 
