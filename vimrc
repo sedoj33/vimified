@@ -101,8 +101,7 @@ if count(g:vimified_packages, 'general')
     Bundle 'vim-scripts/scratch.vim'
 
     Bundle 'vim-scripts/buffet.vim'
-    "Bundle 'troydm/easybuffer.vim'
-    "nmap <leader>be :EasyBufferToggle<cr>
+    nmap <leader>bl :Bufferlist<enter>
 
     Bundle 'terryma/vim-multiple-cursors'
 
