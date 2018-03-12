@@ -109,6 +109,7 @@ if count(g:vimified_packages, 'general')
     Bundle 'rhowardiv/nginx-vim-syntax'
     " YAML syntax
     Bundle 'stephpy/vim-yaml'
+    Bundle 'mhinz/vim-startify'
 endif
 " }}}
 
