@@ -100,10 +100,16 @@ if count(g:vimified_packages, 'general')
 
     Bundle 'vim-scripts/scratch.vim'
 
-    Bundle 'troydm/easybuffer.vim'
-    nmap <leader>be :EasyBufferToggle<cr>
+    Bundle 'vim-scripts/buffet.vim'
+    "Bundle 'troydm/easybuffer.vim'
+    "nmap <leader>be :EasyBufferToggle<cr>
 
     Bundle 'terryma/vim-multiple-cursors'
+
+    " Nginx synax
+    Bundle 'rhowardiv/nginx-vim-syntax'
+    " YAML syntax
+    Bundle 'stephpy/vim-yaml'
 endif
 " }}}
 
@@ -184,6 +190,11 @@ if count(g:vimified_packages, 'coding')
 
     " Check API docs for current word in Zeal: http://zealdocs.org/
     nnoremap <leader>d :!zeal --query "<cword>"&<CR><CR>
+
+    " Lang support
+    Bundle 'vim-scripts/bash-support.vim'
+    Bundle 'vim-scripts/perl-support.vim'
+    Bundle 'vim-perl/vim-perl'
 endif
 " }}}
 
@@ -314,6 +325,7 @@ if count(g:vimified_packages, 'color')
     Bundle 'Elive/vim-colorscheme-elive'
     Bundle 'zeis/vim-kolor'
     Bundle 'xero/sourcerer.vim'
+    Bundle 'rakr/vim-one'
 
     " During installation the molokai colorscheme might not be avalable
     if filereadable(globpath(&rtp, 'colors/molokai.vim'))
