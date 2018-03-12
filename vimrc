@@ -676,7 +676,7 @@ hi! link ShowMarksHLm LineNr
 
 " }}}
 
-" Поддержка кирилицы {{{
+" Поддержка кириллицы {{{
 map ё `
 map й q
 map ц w
