@@ -432,6 +432,8 @@ set nolazyredraw
 
 " Disable the macvim toolbar
 set guioptions-=T
+" Disable menubar
+set guioptions-=m
 
 set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮,trail:␣
 set showbreak=↪
