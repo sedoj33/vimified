@@ -167,8 +167,18 @@ if count(g:vimified_packages, 'coding')
     Bundle 'sjl/splice.vim'
 
     Bundle 'tpope/vim-fugitive'
-    nmap <leader>gs :Gstatus<CR>
-    nmap <leader>gc :Gcommit -v<CR>
+    nmap <silent> <leader>gs :Gstatus<CR>
+    nmap <silent> <leader>gd :Gdiff<CR>
+    nmap <silent> <leader>gc :Gcommit<CR>
+    nmap <silent> <leader>gb :Gblame<CR>
+    nmap <silent> <leader>gl :Glog<CR>
+    nmap <silent> <leader>gp :Git push<CR>
+    nmap <silent> <leader>gr :Gread<CR>
+    nmap <silent> <leader>gw :Gwrite<CR>
+    nmap <silent> <leader>ge :Gedit<CR>
+    " Mnemonic _i_nteractive
+    nmap <silent> <leader>gi :Git add -p %<CR>
+    nmap <silent> <leader>gg :SignifyToggle<CR>
     nmap <leader>gac :Gcommit --amen -v<CR>
     nmap <leader>g :Ggrep
     " ,f for global git search for word under the cursor (with highlight)
