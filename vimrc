@@ -516,6 +516,9 @@ if has("gui_running")
       \    :call system("wmctrl -ir " . v:windowid . " -b toggle,fullscreen")<CR>
   endif
 endif
+
+autocmd BufRead,BufNewFile */nginx/*,/etc/nginx/*,/usr/local/nginx/conf/* if &ft == '' | setfiletype nginx | endif
+autocmd BufRead,BufNewFile */mock-build/*/config set syntax=sh
 " }}}
 
 " Triggers {{{
